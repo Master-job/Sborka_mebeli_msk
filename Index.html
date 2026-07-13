@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Оптимизация под Москву -->
+    <title>Сборка корпусной мебели в Москве — Оценка стоимости по фото за 2 минуты</title>
+    <meta name="description" content="Узнайте точную стоимость сборки шкафа, кровати или комода в Москве. Пришлите фото мебели или чертежа в мессенджер и получите расчет цены от мастера за 2 минуты. Без скрытых наценок.">
+    <meta name="keywords" content="сборка мебели москва, собрать шкаф цена мск, сборщик мебели москва, сборка шкафа купе, сборка кровати москва, рассчитать стоимость сборки мебели">
+    
+    <style>
+        :root {
+            --bg: #0B0F19; /* Глубокий темный графит (тренд) */
+            --card-bg: rgba(255, 255, 255, 0.03); /* Стекломорфизм */
+            --border: rgba(255, 255, 255, 0.08);
+            --text: #F3F4F6;
+            --text-muted: #9CA3AF;
+            --wa-color: #25D366; /* Зеленый WhatsApp */
+            --tg-color: #0088CC; /* Синий Telegram */
+            --accent-glow: rgba(99, 102, 241, 0.15);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', system-ui, -apple-system, sans-serif; background-color: var(--bg); color: var(--text); line-height: 1.4; padding: 15px; }
+        
+        .wrapper { max-width: 650px; margin: 0 auto; display: flex; flex-direction: column; gap: 15px; padding-top: 10px; }
+
+        /* Стиль Bento Box */
+        .bento-box {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: 24px;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        /* Главный экран */
+        .status-badge { display: inline-flex; align-items: center; gap: 6px; color: var(--wa-color); font-size: 0.8rem; font-weight: 600; margin-bottom: 12px; background: rgba(37, 211, 102, 0.08); padding: 6px 12px; border-radius: 100px; }
+        .status-badge span { display: inline-block; width: 8px; height: 8px; background: var(--wa-color); border-radius: 50%; animation: pulse 2s infinite; }
+        
+        h1 { font-size: 1.8rem; font-weight: 800; line-height: 1.2; margin-bottom: 10px; letter-spacing: -0.02em; }
+        h1 span { background: linear-gradient(90deg, #6366F1, #A855F7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .subtitle { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 5px; }
+
+        /* Продающие триггеры */
+        .triggers-list { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 15px 0 5px 0; }
+        .trigger-item { display: flex; align-items: center; gap: 8px; font-size: 0.85rem; color: var(--text); }
+        .trigger-item svg { color: var(--wa-color); min-width: 16px; }
+
+        /* КНОПКИ ДЕЙСТВИЯ (Главный элемент конверсии) */
+        .action-title { font-size: 1.1rem; font-weight: 700; text-align: center; margin-bottom: 15px; color: #fff; }
+        .btn-chat { display: flex; align-items: center; justify-content: center; gap: 12px; width: 100%; padding: 18px; border-radius: 16px; font-weight: 700; font-size: 1.05rem; text-decoration: none; color: #fff; margin-bottom: 12px; transition: transform 0.2s, box-shadow 0.2s; border: none; cursor: pointer; }
+        .btn-chat:hover { transform: translateY(-2px); }
+        
+        .btn-wa { background: var(--wa-color); box-shadow: 0 8px 20px rgba(37, 211, 102, 0.2); }
+        .btn-tg { background: var(--tg-color); box-shadow: 0 8px 20px rgba(0, 136, 204, 0.2); margin-bottom: 0; }
+
+        /* Блок доверия: Трендовые Карточки вместо карусели */
+        h2 { font-size: 1.2rem; font-weight: 700; margin-bottom: 12px; }
+        .work-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+        .work-card { border: 1px solid var(--border); border-radius: 16px; overflow: hidden; background: rgba(0,0,0,0.15); }
+        .work-img-stub { height: 130px; background: rgba(255,255,255,0.01); display: flex; align-items: center; justify-content: center; font-size: 0.8rem; color: var(--text-muted); border-bottom: 1px solid var(--border); border: 2px dashed rgba(255,255,255,0.05); border-radius: 16px 16px 0 0; }
+        .work-info { padding: 12px; font-size: 0.8rem; }
+        .work-info strong { display: block; color: #fff; margin-bottom: 2px; font-size: 0.85rem; }
+
+        /* Юридический щит */
+        .legal-shield { font-size: 0.7rem; color: var(--text-muted); text-align: center; line-height: 1.3; margin-top: 5px; }
+
+        /* Анимация пульсации статуса */
+        @keyframes pulse {
+            0% { transform: scale(0.95); opacity: 0.5; }
+            50% { transform: scale(1.1); opacity: 1; }
+            100% { transform: scale(0.95); opacity: 0.5; }
+        }
+
+        /* Адаптивность под мобильные телефоны */
+        @media (max-width: 480px) {
+            .triggers-list, .work-grid { grid-template-columns: 1fr; }
+            h1 { font-size: 1.5rem; }
+            .bento-box { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        
+        <!-- БЛОК 1: КТО МЫ И ГДЕ РАБОТАЕМ (SEO + ОФФЕР) -->
+        <header class="bento-box">
+            <div class="status-badge"><span></span> Мастера на связи. Расчет за 2 минуты</div>
+            <h1>Сборка мебели в Москве. <span>Узнайте цену по фото</span></h1>
+            <p class="subtitle">Собираем шкафы-купе, гардеробы, кровати, комоды и гостиные. Кроме кухонных гарнитуров.</p>
+            
+            <div class="triggers-list">
+                <div class="trigger-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Оценка стоимости ДО выезда
+                </div>
+                <div class="trigger-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Выезд по Москве и МО до 40 км
+                </div>
+                <div class="trigger-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Сборка в день обращения
+                </div>
+                <div class="trigger-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Инструмент и крепеж с собой
+                </div>
+            </div>
+        </header>
+
+        <!-- БЛОК 2: ТОЧКА КОНВЕРСИИ (ЖЕСТКИЙ ПРИЗЫВ СБРОСИТЬ ФОТО) -->
+        <section class="bento-box" style="border-color: rgba(99, 102, 241, 0.2); box-shadow: 0 10px 30px var(--accent-glow);">
+            <div class="action-title">Куда прислать фото или чертеж мебели для оценки?</div>
+            
+            <!-- Интеграция ссылок на мессенджеры -->
+            <!-- Замените 79991112233 на свой реальный номер. Замените @username на свой телеграм -->
+            <a href="https://wa.me" class="btn-chat btn-wa" target="_blank">
+                Рассчитать через WhatsApp
+            </a>
+            
+            <a href="https://t.me" class="btn-chat btn-tg" target="_blank">
+                Рассчитать через Telegram
+            </a>
+
+            <div class="legal-shield">
+                *Сайт не собирает куки и персональные данные. Нажимая кнопки связи, вы переходите в личный чат мессенджера. Информация о ценах носит исключительно ознакомительный характер частных мастеров и не является публичной офертой (ст. 437 ГК РФ).
+            </div>
+        </section>
+
+        <!-- БЛОК 3: ПРИМЕРЫ РАБОТ ДЛЯ ДОВЕРИЯ (КАРТОЧКИ БЕНТО) -->
+        <main class="bento-box">
+            <h2>Примеры собранной мебели в Мск</h2>
+            <div class="work-grid">
+                <div class="work-card">
+                    <div class="work-img-stub">[Место под фото: Шкаф-купе]</div>
+                    <div class="work-info">
+                        <strong>Шкаф-купе ПАКС (ИКЕА)</strong>
+                        <span style="color: var(--text-muted);">Сборка + регулировка дверей</span>
+                    </div>
+                </div>
+                <div class="work-card">
+                    <div class="work-img-stub">[Место под фото: Кровать]</div>
+                    <div class="work-info">
+                        <strong>Двуспальная кровать Hoff</strong>
+                        <span style="color: var(--text-muted);">Сборка подъемного механизма</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+</body>
+</html>
