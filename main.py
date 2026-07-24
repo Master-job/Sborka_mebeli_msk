@@ -2,7 +2,7 @@ import asyncio
 import random
 import logging
 from aiohttp import web
-from aiogram import Bot, Dispatcher
+from aiogram import Bot
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 import config
@@ -12,7 +12,6 @@ logging.basicConfig(level=logging.INFO)
 
 # Инициализация бота
 bot = Bot(token=config.BOT_TOKEN)
-dp = Dispatcher()
 
 # Копия списка постов для работы по принципу "Shuffle Queue"
 current_queue = []
@@ -83,8 +82,8 @@ async def main():
     # Запускаем фоновую рассылку
     asyncio.create_task(poster_loop())
     
-    # Запускаем поллинг (если захочешь добавить команды боту)
-    await dp.start_polling(bot)
+    # Удерживаем процесс запущенным (без поллинга Telegram)
+    await asyncio.Event().wait()
 
 if __name__ == "__main__":
     asyncio.run(main())

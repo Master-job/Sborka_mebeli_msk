@@ -39,7 +39,7 @@ POSTS = [
         "buttons": [
             {"text": "💬 Заказать сборку", "url": "https://t.me/ТВОЙ_ТЕЛЕГРАМ_ЮЗЕРНЕЙМ"}
         ]
-    }
+    },
     {
         "photo": "https://picsum.photos/800/600?random=1",
         "text": (
